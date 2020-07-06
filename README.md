@@ -19,7 +19,8 @@ Click this Link : https://abubakarwebdev.github.io/webapplications/
 
 | Website&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Description                                                        |
 | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| [Library Managment System](https://abubakarwebdev.github.io/webapplications/library-managment-system/library.html)                                                   | Awesome UI Components of all types                                 |
+| [Library Managment System](https://abubakarwebdev.github.io/webapplications/library-managment-system/library.html)|A Simple Javascript Application that View, Create, Delete, Search and Update Your Library Records|
+|[Corona Virus World Map](https://abubakarwebdev.github.io/webapplications/library-managment-system/library.html)|A Simple Javascript Application that Show the All Over the World Map For COVID-19 Cases. It Shows Country Name, Its Total Positive Cases, Total Death Cases and Disease Stage. With the Help of Daily Updatable API.|
 
 # ▀▄▀▄▀▄ [ Follow Me on ] ▄▀▄▀▄▀
 ➡️ Facebook:  https://www.facebook.com/techmemories/ 
