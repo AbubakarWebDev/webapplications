@@ -12,7 +12,7 @@ Most of the websites are just for fun and some are very useful for specific purp
 Click this Link : https://abubakarwebdev.github.io/Websites/
 
 # See The Live Demo of Our Created Web Application
-Click this Link : https://abubakarwebdev.github.io/webapplication/
+Click this Link : https://abubakarwebdev.github.io/webapplications/
 
 # Visit Our Blog For Learning Web development
 Click this Link : https://techmemorise.blogspot.com/
