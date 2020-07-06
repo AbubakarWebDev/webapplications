@@ -17,10 +17,11 @@ Click this Link : https://abubakarwebdev.github.io/webapplications/
 ## Our All Created Web Applications Link
 > Our Created Web Applications is Simple, Clean & Elegent. This is The Best Functionallity that I Provided To My Web Application. All the Web Application Link is provided Below. All of These Web Application are created HTML5 CSS3 Bootstrap 4 Javascript & Jquery. This is Only a FrontEnd Not Backend is Attached With This Web Applications.
 
-| Website&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | Description                                                        |
-| -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| [Library Managment System](https://abubakarwebdev.github.io/webapplications/library-managment-system/library.html)                                                            | A Simple Javascript Application that View, Create, Delete, Search and Update Your Library Records                                                                               |
+|Website&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |Description                                                          |
+|---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
+|[Library Managment System](https://abubakarwebdev.github.io/webapplications/library-managment-system/library.html)                                                             | A Simple Javascript Application that View, Create, Delete, Search and Update Your Library Records                                                                               |
 |[Corona Virus World Map](https://abubakarwebdev.github.io/webapplications/library-managment-system/library.html)                                                               | A Simple Javascript Application that Show the All Over the World Map For COVID-19 Cases. It Shows Country Name, Its Total Positive Cases, Total Death Cases and Disease Stage. With the Help of Daily Updatable API.                                                                                                                                           |
+|[Online Alarm Clock](https://abubakarwebdev.github.io/webapplications/online-alarm-clock/alarmApp.html)                                                                        | A Simple Javascript Application that Set and Stop Your Alarm Clock and it Also Shows Date and Time.                                                                             |
 
 # ▀▄▀▄▀▄ [ Follow Me on ] ▄▀▄▀▄▀
 ➡️ Facebook:  https://www.facebook.com/techmemories/ 
