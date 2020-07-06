@@ -1341,7 +1341,7 @@ body.is-preload #header .content .inner {
 	}
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 800px) {
 	#header {
 		padding: 1.5rem 0;
 	}
