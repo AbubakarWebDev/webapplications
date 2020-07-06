@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Primary Meta Tags -->
+	<title>Online GPA Calculator - Web Development</title>
+	<meta content='max-snippet:-1, max-image-preview:large, max-video-preview:-1' name='robots'/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta content='Online GPA Calculator - Web Development' property='og:site_name' />
+	<meta content='Online GPA Calculator - Web Development' name='copyright' />
+	<meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+	<meta content='#ffffff' name='msapplication-navbutton-color'/>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible' />
+	<meta content='true' name='MSSmartTagsPreventParsing'/>
+	<meta content='en-US' property='og:locale:alternate'/>
+	<meta content='en-us' http-equiv='Content-Language' />
+	<meta content='IE=7' http-equiv='X-UA-Compatible' />
+	<meta content='follow,all' name='Googlebot-Image' />
+	<meta content='public' http-equiv='Cache-control'/>
+	<meta content='sitelinkssearchbox' name='google'/>
+	<meta content='Muhammad Abubakar' name='author' />
+	<meta content='index,follow' name='googlebot' />
+	<meta content='Pakistan' name='geo.placename'/>
+	<meta content='period' name='revisit-after' />
+	<meta content='index,follow' name='robots' />
+	<meta content='follow,all' name='Scooter' />
+	<meta content='#ffffff' name='theme-color'/>
+	<meta content='global' name='distribution'/>
+	<meta content='follow,all' name='ZyBorg' />
+	<meta content='follow,all' name='msnbot' />
+	<meta content='follow,all' name='Slurp' />
+	<meta content='pk' property='og:locale'/>
+	<meta content='English' name='language'/>
+	<meta content='all' name='WEBCRAWLERS' />
+	<meta name="language" content='English'/>
+	<meta content='PK-WB' name='geo.region'/>
+	<meta content='1 days' name='revisit' />
+	<meta content='PK' name='geo.country'/>
+	<meta name='rating' content='general'/>
+	<meta content='global' name='target'/>
+	<meta content='never' name='expires'/>
+	<meta content='all' name='spiders'/>
+	<meta charset='utf-8' />
+
+	<!-- Secondary Meta Tags -->
+	<meta name="title" content="Online GPA Calculator - Web Development">
+	<meta name="description" content="useful Online GPA Calculator and website development. Abubakarwebdev made best javascript Applications.">
+	<meta content='abubakarwebdev, html, css, js, javascript, cascading style sheet, hyper text markup language, jquery, fontawesome, saas, bootstrap, angular, react, Online GPA Calculator, vanilla javascript' name='keywords'/>
+	<meta itemprop="name" content="Online GPA Calculator - Web Development">
+	<meta itemprop="description" content="useful Online GPA Calculator and website development. Abubakarwebdev made best javascript applications.">
+	<meta itemprop="image" content="https://abubakarwebdev.github.io/webapplications/main/images/abubakarwebdev.jpg">
+	<meta expr:content='https://abubakarwebdev.github.io/webapplications/main/sitemap.xml' rel='sitemap' type='application/xml'/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://abubakarwebdev.github.io/webapplications/online-gpa-calculator">
+	<meta property="og:title" content="Online GPA Calculator - Web Development">
+	<meta property="og:description" content="useful Online GPA Calculator and website development. Abubakarwebdev made best javascript applications.">
+	<meta property="og:image" content="https://abubakarwebdev.github.io/webapplications/main/images/abubakarwebdev.jpg">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://abubakarwebdev.github.io/webapplications/online-gpa-calculator">
+	<meta property="twitter:title" content="Online GPA Calculator - Web Development">
+	<meta property="twitter:description" content="useful Online GPA Calculator and website development. Abubakarwebdev made best javascript applications.">
+	<meta property="twitter:image" content="https://abubakarwebdev.github.io/webapplications/main/images/abubakarwebdev.jpg">
+
+    <!-- Link Tags -->
+	<link href='https://abubakarwebdev.github.io/webapplications/online-gpa-calculator' rel='canonical'/>
+	<link href='https://abubakarwebdev.github.io/webapplications/online-gpa-calculator' hreflang='x-default' rel='alternate'/>
+    <link href='main/images/apple-touch-icon.png' rel='icon' type='image/png'/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" type="text/css">
+</head>
+<style>
+    #main-heading {
+        text-align: center;
+        background-color: #1e5cce;
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+        padding: 10px;
+        color: #ffff;
+    }
+
+    form label {
+        font-weight: bolder;
+    }
+
+    form .col-md-8 {
+        padding-left: 0 !important;
+    }
+
+    .gpa-circle {
+        width: 160px;
+        height: 160px;
+        border-radius: 100%;
+        color: #fff;
+        background-color: #343A40;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        border: 6px solid #eee;
+    }
+
+    .gpa-circle p {
+        font-family: "Cabin", serif;
+        font-size: 18px;
+        line-height: 1;
+        margin: 5px;
+    }
+
+    .gpa-circle strong {
+        font-family: "Roboto", serif;
+        font-size: 50px;
+        line-height: 1;
+    }
+
+    @media (max-width: 768px) {
+        form .col-md-4 label {
+            padding: 10px 0;
+            margin: 0 !important;
+        }
+    }
+
+    @media (min-width: 768px) {
+        form .col-md-4 {
+            padding-left: 0 !important;
+        }
+
+        form .col-md-4 label {
+            margin: 0 !important;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    }
+</style>
+
+<body>
+    <h1 id="main-heading">Welcome To Our GPA Calculator</h1>
+    <section class="container-md container-fluid text-center">
+        <h1>Privacy Policy</h1>
+        <p>We may collect personal identification information from Users in a variety of ways, including, but not
+            limited to, when
+            Users visit our site, fill out a form, and in connection with other activities,
+            services,
+            features or resources we make available on our Site. Users may be asked for, as appropriate, name, email
+            address. Users
+            may, however, visit our Site anonymously. We will collect personal identification information from Users
+            only if they
+            voluntarily submit such information to us. Users can always refuse to supply personally identification
+            information,
+            except that it may prevent them from engaging in certain Site related activities.We adopt appropriate data
+            collection, storage and processing practices and security measures to protect against
+            unauthorized access, alteration, disclosure or destruction of your personal information, username, password,
+            transaction
+            information and data stored on our Site.
+            Our Site is in compliance with PCI vulnerability standards in order to create as secure of an environment as
+            possible
+            for Users.
+        </p>
+        <h1>Requirement For Entering Input</h1>
+        <ul class="text-left">
+            <li>Your Course Name Input Contains Uppercase and Lowercase character (minimum chracters : 3 & maximaum
+                chracters : 15) and otherwise your Input is Not
+                Valid. </li>
+            <li>Your Grade Input is Simple. You Easily Select Your Grade Through Selection</li>
+            <li>Your Course Credits Hour Input must contains at least one character Number and at max 2 characters
+                Number and otherwise your Input is Not Valid.</li>
+        </ul>
+    </section>
+    <section class="container-md">
+        <div class="row justify-content-center text-center my-3">
+            <h1>Criteria For Calculating GPA</h1>
+            <p>Grade point average (GPA) is a commonly used indicator of an individual's academic achievement in school,
+                Collges and Universtities. It is the
+                average of the grades attained in each course, taking course credit into consideration. Grading systems
+                vary
+                in
+                different countries, or even schools. This calculators use the following letter grades and their typical
+                corresponding numerical equivalents based on
+                grade points.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <table class="table table-bordered" align="center">
+                    <thead class="thead-dark">
+                        <tr align="center">
+                            <th>Grade</th>
+                            <th>GPA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr align="center">
+                            <td>A+</td>
+                            <td>4.3</td>
+                        </tr>
+                        <tr align="center">
+                            <td>A</td>
+                            <td>4.0</td>
+                        </tr>
+                        <tr align="center">
+                            <td>A-</td>
+                            <td>3.7</td>
+                        </tr>
+                        <tr align="center">
+                            <td>B+</td>
+                            <td>3.3</td>
+                        </tr>
+                        <tr align="center">
+                            <td>B</td>
+                            <td>3.0</td>
+                        </tr>
+                        <tr align="center">
+                            <td>B-</td>
+                            <td>2.7</td>
+                        </tr>
+                        <tr align="center">
+                            <td>C+</td>
+                            <td>2.3</td>
+                        </tr>
+                        <tr align="center">
+                            <td>C</td>
+                            <td>2.0</td>
+                        </tr>
+                        <tr align="center">
+                            <td>C-</td>
+                            <td>1.7</td>
+                        </tr>
+                        <tr align="center">
+                            <td>D+</td>
+                            <td>1.3</td>
+                        </tr>
+                        <tr align="center">
+                            <td>D</td>
+                            <td>1.0</td>
+                        </tr>
+                        <tr align="center">
+                            <td>D-</td>
+                            <td>0.7</td>
+                        </tr>
+                        <tr align="center">
+                            <td>F</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6">
+                <hr>
+                <p>Most schools, colleges, and universities in all over the World use a grading system based on this
+                    criteria that you seeing above, though E is sometimes used instead of F. Grading systems do differ
+                    however based on what constitutes an A or B, and some do not include grades such as an A+ or a B-.
+                    Others may attribute more weight to certain courses, and thus whatever grade is attained in the
+                    course will have a larger effect on overall GPA. The calculator can account for this based on the
+                    number of credits attributed to a course, where credit is the "weighting" of the course, as shown in
+                    the examples below.</p>
+                <hr>
+                <table class="table table-bordered" align="center">
+                    <thead class="thead-dark">
+                        <tr align="center">
+                            <th>Course</th>
+                            <th>Credits</th>
+                            <th>Grade</th>
+                            <th>GPA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr align="center">
+                            <td>Math</td>
+                            <td>4</td>
+                            <td>A+</td>
+                            <td>4 x 4.3 = 17.2</td>
+                        </tr>
+                        <tr align="center">
+                            <td>Physics</td>
+                            <td>2</td>
+                            <td>B</td>
+                            <td>2 x 3 = 6</td>
+                        </tr>
+                        <tr align="center">
+                            <td>English</td>
+                            <td>3</td>
+                            <td>A</td>
+                            <td>3 x 4 = 12</td>
+                        </tr>
+                        <tr align="center">
+                            <td>Total</td>
+                            <td>9</td>
+                            <td>NA</td>
+                            <td>35.2</td>
+                        </tr>
+                    </tbody>
+                    <tfoot class="thead-dark">
+                        <tr align="center">
+                            <th colspan="2">GPA</th>
+                            <th colspan="2">35.2 / 9 = 3.91</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section class="my-5 container-lg">
+        <div class="row justify-content-center text-center">
+            <h1>College GPA Calculator</h1>
+            <p class="m-0 p-0">Want to calculate your college course grades? Our easy to use college GPA calculator will
+                help you calculate your GPA and stay on top of your study grades in just minutes! Whether you are taking
+                degree courses online or are on a community college campus, no matter what degree course or specialized
+                study you are aiming for – we’ve got you covered.</p>
+        </div>
+        <form class="rounded-lg border border-danger my-5">
+            <h2 class="text-center bg-dark text-white py-3 rounded-lg">SEMESTER 1</h2>
+            <div class="row my-4 mx-2">
+                <div class="col-md-4">
+                    <div class="row">
+                        <label class="col-md-4">Course :</label>
+                        <div class="col-md-8">
+                            <input type="text" placeholder="Course Name" pattern="[A-Za-z]{3,15}"
+                                title="Course Name Only Contains min 3 to max 15 Characters of Alphabets"
+                                class="form-control course" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <label class="col-md-4">Grade :</label>
+                        <div class="col-md-8">
+                            <select class="custom-select grade" required>
+                                <option value="" selected disabled>Select Grade</option>
+                                <option value="4.3">A+</option>
+                                <option value="4">A</option>
+                                <option value="3.7">A-</option>
+                                <option value="3.3">B+</option>
+                                <option value="3">B</option>
+                                <option value="2.7">B-</option>
+                                <option value="2.3">C+</option>
+                                <option value="2">C</option>
+                                <option value="1.7">C-</option>
+                                <option value="1.3">D+</option>
+                                <option value="1">D</option>
+                                <option value="0.7">D-</option>
+                                <option value="0">F</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <label class="col-md-4">Credits :</label>
+                        <div class="col-md-8">
+                            <input type="number" placeholder="Credits Hour" class="form-control credits" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row my-4 mx-2">
+                <div class="col-md-4">
+                    <div class="row">
+                        <label class="col-md-4">Course :</label>
+                        <div class="col-md-8">
+                            <input type="text" placeholder="Course Name" pattern="[A-Za-z]{3,15}"
+                                title="Course Name Only Contains min 3 to max 15 Characters of Alphabets"
+                                class="form-control course" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <label class="col-md-4">Grade :</label>
+                        <div class="col-md-8">
+                            <select class="custom-select grade" required>
+                                <option value="" selected disabled>Select Grade</option>
+                                <option value="4.3">A+</option>
+                                <option value="4">A</option>
+                                <option value="3.7">A-</option>
+                                <option value="3.3">B+</option>
+                                <option value="3">B</option>
+                                <option value="2.7">B-</option>
+                                <option value="2.3">C+</option>
+                                <option value="2">C</option>
+                                <option value="1.7">C-</option>
+                                <option value="1.3">D+</option>
+                                <option value="1">D</option>
+                                <option value="0.7">D-</option>
+                                <option value="0">F</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <label class="col-md-4">Credits :</label>
+                        <div class="col-md-8">
+                            <input type="number" placeholder="Credits Hour" class="form-control credits" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row my-4 mx-2">
+                <div class="col-md-4">
+                    <div class="row">
+                        <label class="col-md-4">Course :</label>
+                        <div class="col-md-8">
+                            <input type="text" placeholder="Course Name" pattern="[A-Za-z]{3,15}"
+                                title="Course Name Only Contains min 3 to max 15 Characters of Alphabets"
+                                class="form-control course" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <label class="col-md-4">Grade :</label>
+                        <div class="col-md-8">
+                            <select class="custom-select grade" required>
+                                <option value="" selected disabled>Select Grade</option>
+                                <option value="4.3">A+</option>
+                                <option value="4">A</option>
+                                <option value="3.7">A-</option>
+                                <option value="3.3">B+</option>
+                                <option value="3">B</option>
+                                <option value="2.7">B-</option>
+                                <option value="2.3">C+</option>
+                                <option value="2">C</option>
+                                <option value="1.7">C-</option>
+                                <option value="1.3">D+</option>
+                                <option value="1">D</option>
+                                <option value="0.7">D-</option>
+                                <option value="0">F</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <label class="col-md-4">Credits :</label>
+                        <div class="col-md-8">
+                            <input type="number" placeholder="Credits Hour" class="form-control credits" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row mb-3 justify-content-center">
+                <button type="button" class="addCourseBtn btn btn-primary btn-lg m-3">Add Another Course</button>
+                <button type="submit" class="calculateGpaBtn btn btn-primary btn-lg m-3">Calculate Your GPA</button>
+            </div>
+            <div class="row mb-4 mt-4 justify-content-center"></div>
+        </form>
+        <div class="row my-5 justify-content-center">
+            <button id="addSemesterBtn" type="button" class="btn btn-dark btn-lg">Add Another Semester</button>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function () {
+            let semesterIndex = 1;
+            $(document).on("click", "button.addCourseBtn", function () {
+                $(this).parent().before(`
+            <div class="row my-4 mx-2">
+                <div class="col-md-4">
+                    <div class="row">
+                        <label class="col-md-4">Course :</label>
+                        <div class="col-md-8">
+                            <input type="text" placeholder="Course Name" pattern="[A-Za-z]{3,15}"
+                                title="Course Name Only Contains min 3 to max 15 Characters of Alphabets" class="form-control"
+                            course  required>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <label class="col-md-4">Grade :</label>
+                        <div class="col-md-8">
+                            <select class="custom-select grade" required>
+                                <option value="" selected disabled>Select Grade</option>
+                                <option value="4.3">A+</option>
+                                <option value="4">A</option>
+                                <option value="3.7">A-</option>
+                                <option value="3.3">B+</option>
+                                <option value="3">B</option>
+                                <option value="2.7">B-</option>
+                                <option value="2.3">C+</option>
+                                <option value="2">C</option>
+                                <option value="1.7">C-</option>
+                                <option value="1.3">D+</option>
+                                <option value="1">D</option>
+                                <option value="0.7">D-</option>
+                                <option value="0">F</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <label class="col-md-4">Credits :</label>
+                        <div class="col-md-8">
+                            <input type="number" placeholder="Credits Hour" class="form-control credits" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>`);
+            });
+            $("#addSemesterBtn").click(function () {
+                semesterIndex++;
+                $(this).parent().before(`
+                <form class="rounded-lg border border-danger my-5">
+                <h2 class="text-center bg-dark text-white py-3 rounded-lg">SEMESTER ${semesterIndex}</h2>
+                <div class="row my-4 mx-2">
+                    <div class="col-md-4">
+                        <div class="row">
+                            <label class="col-md-4">Course :</label>
+                            <div class="col-md-8">
+                                <input type="text" placeholder="Course Name" pattern="[A-Za-z]{3,15}"
+                                    title="Course Name Only Contains min 3 to max 15 Characters of Alphabets" class="form-control"
+                                course  required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <label class="col-md-4">Grade :</label>
+                            <div class="col-md-8">
+                                <select class="custom-select grade" required>
+                                    <option value="" selected disabled>Select Grade</option>
+                                    <option value="4.3">A+</option>
+                                    <option value="4">A</option>
+                                    <option value="3.7">A-</option>
+                                    <option value="3.3">B+</option>
+                                    <option value="3">B</option>
+                                    <option value="2.7">B-</option>
+                                    <option value="2.3">C+</option>
+                                    <option value="2">C</option>
+                                    <option value="1.7">C-</option>
+                                    <option value="1.3">D+</option>
+                                    <option value="1">D</option>
+                                    <option value="0.7">D-</option>
+                                    <option value="0">F</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <label class="col-md-4">Credits :</label>
+                            <div class="col-md-8">
+                                <input type="number" placeholder="Credits Hour" class="form-control credits" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row my-4 mx-2">
+                    <div class="col-md-4">
+                        <div class="row">
+                            <label class="col-md-4">Course :</label>
+                            <div class="col-md-8">
+                                <input type="text" placeholder="Course Name" pattern="[A-Za-z]{3,15}"
+                                    title="Course Name Only Contains min 3 to max 15 Characters of Alphabets" class="form-control"
+                                course  required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <label class="col-md-4">Grade :</label>
+                            <div class="col-md-8">
+                                <select class="custom-select grade" required>
+                                    <option value="" selected disabled>Select Grade</option>
+                                    <option value="4.3">A+</option>
+                                    <option value="4">A</option>
+                                    <option value="3.7">A-</option>
+                                    <option value="3.3">B+</option>
+                                    <option value="3">B</option>
+                                    <option value="2.7">B-</option>
+                                    <option value="2.3">C+</option>
+                                    <option value="2">C</option>
+                                    <option value="1.7">C-</option>
+                                    <option value="1.3">D+</option>
+                                    <option value="1">D</option>
+                                    <option value="0.7">D-</option>
+                                    <option value="0">F</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <label class="col-md-4">Credits :</label>
+                            <div class="col-md-8">
+                                <input type="number" placeholder="Credits Hour" class="form-control credits" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row my-4 mx-2">
+                    <div class="col-md-4">
+                        <div class="row">
+                            <label class="col-md-4">Course :</label>
+                            <div class="col-md-8">
+                                <input type="text" placeholder="Course Name" pattern="[A-Za-z]{3,15}"
+                                    title="Course Name Only Contains min 3 to max 15 Characters of Alphabets" class="form-control"
+                                course  required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <label class="col-md-4">Grade :</label>
+                            <div class="col-md-8">
+                                <select class="custom-select grade" required>
+                                    <option value="" selected disabled>Select Grade</option>
+                                    <option value="4.3">A+</option>
+                                    <option value="4">A</option>
+                                    <option value="3.7">A-</option>
+                                    <option value="3.3">B+</option>
+                                    <option value="3">B</option>
+                                    <option value="2.7">B-</option>
+                                    <option value="2.3">C+</option>
+                                    <option value="2">C</option>
+                                    <option value="1.7">C-</option>
+                                    <option value="1.3">D+</option>
+                                    <option value="1">D</option>
+                                    <option value="0.7">D-</option>
+                                    <option value="0">F</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <label class="col-md-4">Credits :</label>
+                            <div class="col-md-8">
+                                <input type="number" placeholder="Credits Hour" class="form-control credits" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row mb-3 justify-content-center">
+                    <button type="button" class="addCourseBtn btn btn-primary btn-lg m-3">Add Another Course</button>
+                    <button type="submit" class="calculateGpaBtn btn btn-primary btn-lg m-3">Calculate Your GPA</button>
+                </div>
+                <div class="row mb-4 mt-4 justify-content-center"></div>
+            </form>`);
+            })
+            $(document).on("click", "button.calculateGpaBtn", function (e) {
+                e.preventDefault();
+                let credits = $(this).parent().parent().find("input.credits");
+                let grade = $(this).parent().parent().find("select.grade");
+                let totalCredits = 0;
+                let totalGradePoints = 0;
+                let gpa = 0;
+
+                function filterArray(array) {
+                    let passed = [];
+                    for (let i = 0; i < array.length; i++) {
+                        const element = array[i];
+                        if (element.value != "") {
+                            passed.push(element);
+                        }
+                    }
+                    return passed;
+                }
+
+                credits = filterArray(credits);
+                grade = filterArray(grade);
+                let iterationNumber = 0;
+                
+                if (credits.length >= grade.length) {
+                    iterationNumber = grade.length;
+                } 
+                else if (grade.length >= credits.length) {
+                    iterationNumber = credits.length;
+                }
+                else {
+                    iterationNumber = credits.length;
+                }
+
+                for (let i = 0; i < iterationNumber; i++) {
+                    const element = parseFloat(credits[i].value);
+                    totalCredits += element;
+                }
+
+                for (let i = 0; i < iterationNumber; i++) {
+                    const element1 = parseFloat(credits[i].value);
+                    const element2 = parseFloat(grade[i].value);
+                    const element3 = element1 * element2;
+                    totalGradePoints += element3;
+                }
+
+                gpa = totalGradePoints / totalCredits;
+
+                $(this).parent().next().html(`
+                <div class="gpa-circle">
+                    <p>Your Semester GPA is</p>
+                    <strong>${gpa.toFixed(2)}</strong>
+                </div>`);
+            });
+        });
+    </script>
+
+</body>
+
+</html>

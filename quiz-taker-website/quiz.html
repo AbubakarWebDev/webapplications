@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Primary Meta Tags -->
+	<title>Quiz Taker Website - Web Development</title>
+	<meta content='max-snippet:-1, max-image-preview:large, max-video-preview:-1' name='robots'/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta content='Quiz Taker website - Web Development' property='og:site_name' />
+	<meta content='Quiz Taker website - Web Development' name='copyright' />
+	<meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+	<meta content='#ffffff' name='msapplication-navbutton-color'/>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible' />
+	<meta content='true' name='MSSmartTagsPreventParsing'/>
+	<meta content='en-US' property='og:locale:alternate'/>
+	<meta content='en-us' http-equiv='Content-Language' />
+	<meta content='IE=7' http-equiv='X-UA-Compatible' />
+	<meta content='follow,all' name='Googlebot-Image' />
+	<meta content='public' http-equiv='Cache-control'/>
+	<meta content='sitelinkssearchbox' name='google'/>
+	<meta content='Muhammad Abubakar' name='author' />
+	<meta content='index,follow' name='googlebot' />
+	<meta content='Pakistan' name='geo.placename'/>
+	<meta content='period' name='revisit-after' />
+	<meta content='index,follow' name='robots' />
+	<meta content='follow,all' name='Scooter' />
+	<meta content='#ffffff' name='theme-color'/>
+	<meta content='global' name='distribution'/>
+	<meta content='follow,all' name='ZyBorg' />
+	<meta content='follow,all' name='msnbot' />
+	<meta content='follow,all' name='Slurp' />
+	<meta content='pk' property='og:locale'/>
+	<meta content='English' name='language'/>
+	<meta content='all' name='WEBCRAWLERS' />
+	<meta name="language" content='English'/>
+	<meta content='PK-WB' name='geo.region'/>
+	<meta content='1 days' name='revisit' />
+	<meta content='PK' name='geo.country'/>
+	<meta name='rating' content='general'/>
+	<meta content='global' name='target'/>
+	<meta content='never' name='expires'/>
+	<meta content='all' name='spiders'/>
+	<meta charset='utf-8' />
+
+	<!-- Secondary Meta Tags -->
+	<meta name="title" content="Quiz Taker website - Web Development">
+	<meta name="description" content="useful Quiz Taker website and website development. Abubakarwebdev made best javascript Applications.">
+	<meta content='abubakarwebdev, html, css, js, javascript, cascading style sheet, hyper text markup language, jquery, fontawesome, saas, bootstrap, angular, react, Quiz Taker website, vanilla javascript' name='keywords'/>
+	<meta itemprop="name" content="Quiz Taker website - Web Development">
+	<meta itemprop="description" content="useful Quiz Taker website and website development. Abubakarwebdev made best javascript applications.">
+	<meta itemprop="image" content="https://abubakarwebdev.github.io/webapplications/main/images/abubakarwebdev.jpg">
+	<meta expr:content='https://abubakarwebdev.github.io/webapplications/main/sitemap.xml' rel='sitemap' type='application/xml'/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://abubakarwebdev.github.io/webapplications/quiz-taker-website/quiz.html">
+	<meta property="og:title" content="Quiz Taker website - Web Development">
+	<meta property="og:description" content="useful Quiz Taker website and website development. Abubakarwebdev made best javascript applications.">
+	<meta property="og:image" content="https://abubakarwebdev.github.io/webapplications/main/images/abubakarwebdev.jpg">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://abubakarwebdev.github.io/webapplications/quiz-taker-website/quiz.html">
+	<meta property="twitter:title" content="Quiz Taker website - Web Development">
+	<meta property="twitter:description" content="useful Quiz Taker website and website development. Abubakarwebdev made best javascript applications.">
+	<meta property="twitter:image" content="https://abubakarwebdev.github.io/webapplications/main/images/abubakarwebdev.jpg">
+
+    <!-- Link Tags -->
+	<link href='https://abubakarwebdev.github.io/webapplications/quiz-taker-website/quiz.html' rel='canonical'/>
+	<link href='https://abubakarwebdev.github.io/webapplications/quiz-taker-website/quiz.html' hreflang='x-default' rel='alternate'/>
+	<link href='../main/images/apple-touch-icon.png' rel='icon' type='image/png'/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
+    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" type="text/css">
+
+</head>
+<style>
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: "Roboto", sans-serif;
+        background-color: rgb(0, 80, 150);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .question-box {
+        width: 60%;
+        min-height: 86vh;
+        background-color: #ECF0F1;
+    }
+
+    .question-box-container {
+        width: 100%;
+        min-height: calc(86vh - 70px);
+    }
+
+    @media (max-width : 700px) {
+        .question-box {
+            width: 100%;
+            height: 86vh;
+        }
+    }
+
+    .title-box {
+        width: 100%;
+        height: 70px;
+        background-color: #fff;
+    }
+
+    .name {
+        line-height: 70px;
+        margin-left: 20px;
+        font-size: 20px;
+    }
+
+    .timer {
+        min-width: 20%;
+        height: 70px;
+        background-color: rgb(0, 80, 150);
+        font-size: 30px;
+        color: #fff;
+        text-align: center;
+        padding: 0 10px;
+        line-height: 70px;
+    }
+
+    .question {
+        font-size: 25px;
+        font-weight: bolder;
+    }
+
+    label {
+        width: 350px;
+        height: 60px;
+        display: flex;
+        padding-left: 30px;
+        align-items: center;
+        font-size: 20px;
+        border: none;
+        margin: 10px 0px;
+        outline: none;
+        border-radius: 500px;
+        background-color: #fff;
+        color: rgb(0, 80, 150);
+        transition: all 0.3s ease-in-out;
+    }
+
+    label:hover {
+        border: 2px solid rgb(0, 80, 150);
+    }
+
+    input[type=checkbox] {
+        display: none;
+    }
+
+    .uncheck {
+        background-color: #fff;
+        color: rgb(0, 80, 150);
+    }
+
+    .check {
+        background-color: rgb(0, 80, 150);
+        color: #fff;
+    }
+
+    #next-btn {
+        width: 250px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        margin: 10px 0px;
+        border: none;
+        outline: none;
+        border-radius: 500px;
+        background-color: rgb(0, 80, 150);
+        color: #fff;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #next-btn:hover {
+        background-color: #fff;
+        color: rgb(0, 80, 150);
+        border: 2px solid rgb(0, 80, 150);
+    }
+
+    #popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.8);
+        opacity: 0;
+        display: none;
+        transition: all 0.4s linear;
+    }
+
+    #popup-container {
+        position: relative;
+        width: 80vw;
+        height: 300px;
+        font-size: 50px;
+        line-height: 130px;
+        border-top: 80px solid #005094;
+        border-bottom: 80px solid #005094;
+        background-color: #000000;
+        color: #fff;
+        text-align: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: all 0.4s linear;
+    }
+
+    #cross {
+        position: absolute;
+        top: -75%;
+        right: 2%;
+        transition: all 0.4s linear;
+    }
+
+    #cross:hover {
+        text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.8);
+    }
+
+    @media (max-width : 700px) {
+        label {
+            width: 300px;
+            height: 50px;
+        }
+
+        #next-btn {
+            height: 50px;
+        }
+
+        .question {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width : 400px) {
+        .question {
+            text-align: center;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="question-box shadow-lg">
+        <div class="title-box shadow-lg d-flex justify-content-between">
+            <div id="name" class="name font-weight-bolder"></div>
+            <div id="timer" class="timer"></div>
+        </div>
+        <div class="question-box-container d-flex flex-column justify-content-center">
+            <div id="question" class="question ml-sm-4 ml-3 text-sm-left"></div>
+
+            <div class="ml-sm-4 ml-3">
+                <div id="massage" style="color: red;"></div>
+                <input class="chk" type="checkbox" id="checkbox-1">
+                <label id="label-1" for="checkbox-1"></label>
+            </div>
+
+            <div class="ml-sm-4 ml-3">
+                <input class="chk" type="checkbox" id="checkbox-2">
+                <label id="label-2" for="checkbox-2"></label>
+            </div>
+
+            <div class="ml-sm-4 ml-3">
+                <input class="chk" type="checkbox" id="checkbox-3">
+                <label id="label-3" for="checkbox-3"></label>
+            </div>
+
+            <div class="ml-sm-4 ml-3">
+                <input class="chk" type="checkbox" id="checkbox-4">
+                <label id="label-4" for="checkbox-4"></label>
+            </div>
+
+            <button class="ml-sm-4 ml-3 mb-3" id="next-btn" type="button">Next Question</button>
+        </div>
+    </div>
+
+    <div id="popup">
+        <div id="popup-container">
+            <span id="cross"><i class="fas fa-times"></i></span> Oops! Your Time is Up
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+
+</html>

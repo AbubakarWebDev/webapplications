@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Primary Meta Tags -->
+	<title>Corona Virus Map - Web Development</title>
+	<meta content='max-snippet:-1, max-image-preview:large, max-video-preview:-1' name='robots'/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta content='Corona Virus Map - Web Development' property='og:site_name' />
+	<meta content='Corona Virus Map - Web Development' name='copyright' />
+	<meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+	<meta content='#ffffff' name='msapplication-navbutton-color'/>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible' />
+	<meta content='true' name='MSSmartTagsPreventParsing'/>
+	<meta content='en-US' property='og:locale:alternate'/>
+	<meta content='en-us' http-equiv='Content-Language' />
+	<meta content='IE=7' http-equiv='X-UA-Compatible' />
+	<meta content='follow,all' name='Googlebot-Image' />
+	<meta content='public' http-equiv='Cache-control'/>
+	<meta content='sitelinkssearchbox' name='google'/>
+	<meta content='Muhammad Abubakar' name='author' />
+	<meta content='index,follow' name='googlebot' />
+	<meta content='Pakistan' name='geo.placename'/>
+	<meta content='period' name='revisit-after' />
+	<meta content='index,follow' name='robots' />
+	<meta content='follow,all' name='Scooter' />
+	<meta content='#ffffff' name='theme-color'/>
+	<meta content='global' name='distribution'/>
+	<meta content='follow,all' name='ZyBorg' />
+	<meta content='follow,all' name='msnbot' />
+	<meta content='follow,all' name='Slurp' />
+	<meta content='pk' property='og:locale'/>
+	<meta content='English' name='language'/>
+	<meta content='all' name='WEBCRAWLERS' />
+	<meta name="language" content='English'/>
+	<meta content='PK-WB' name='geo.region'/>
+	<meta content='1 days' name='revisit' />
+	<meta content='PK' name='geo.country'/>
+	<meta name='rating' content='general'/>
+	<meta content='global' name='target'/>
+	<meta content='never' name='expires'/>
+	<meta content='all' name='spiders'/>
+	<meta charset='utf-8' />
+
+	<!-- Secondary Meta Tags -->
+	<meta name="title" content="Corona Virus Map - Web Development">
+	<meta name="description" content="useful Corona Virus Map and website development. Abubakarwebdev made best javascript Applications.">
+	<meta content='abubakarwebdev, html, css, js, javascript, cascading style sheet, hyper text markup language, jquery, fontawesome, saas, bootstrap, angular, react, javascript web application, vanilla javascript' name='keywords'/>
+	<meta itemprop="name" content="Corona Virus Map - Web Development">
+	<meta itemprop="description" content="useful Corona Virus Map and website development. Abubakarwebdev made best javascript applications.">
+	<meta itemprop="image" content="https://abubakarwebdev.github.io/webapplications/main/images/abubakarwebdev.jpg">
+	<meta expr:content='https://abubakarwebdev.github.io/webapplications/main/sitemap.xml' rel='sitemap' type='application/xml'/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://abubakarwebdev.github.io/webapplications/corona-virus-map">
+	<meta property="og:title" content="Corona Virus Map - Web Development">
+	<meta property="og:description" content="useful Corona Virus Map and website development. Abubakarwebdev made best javascript applications.">
+	<meta property="og:image" content="https://abubakarwebdev.github.io/webapplications/main/images/abubakarwebdev.jpg">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://abubakarwebdev.github.io/webapplications/corona-virus-map">
+	<meta property="twitter:title" content="Corona Virus Map - Web Development">
+	<meta property="twitter:description" content="useful Corona Virus Map and website development. Abubakarwebdev made best javascript applications.">
+	<meta property="twitter:image" content="https://abubakarwebdev.github.io/webapplications/main/images/abubakarwebdev.jpg">
+
+    <!-- Link Tags -->
+	<link href='https://abubakarwebdev.github.io/webapplications/corona-virus-map' rel='canonical'/>
+	<link href='https://abubakarwebdev.github.io/webapplications/corona-virus-map' hreflang='x-default' rel='alternate'/>
+    <link href='../main/images/apple-touch-icon.png' rel='icon' type='image/png'/>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #map {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .mapboxgl-popup {
+        max-width: 500px;
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    }
+
+    .representation {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 10000;
+    }
+
+    .representation p {
+        font-size: 18px;
+        margin: 15px 0px;
+        color: white;
+        background: none;
+    }
+
+    .mapboxgl-ctrl-bottom-right {
+        display: none;
+    }
+
+    .mapboxgl-ctrl-bottom-left {
+        display: none;
+    }
+</style>
+
+<body style="position:relative">
+    <div id='map'>
+        <div class="representation">
+            <p>Blue Color Represent &nbsp; : Disease Stage 1</p>
+            <p>Black Color Represent : Disease Stage 2</p>
+            <p>Red Color Represent &nbsp; : Disease Stage 3</p>
+        </div>
+    </div>
+
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiYmtyMTIzNCIsImEiOiJjazhhcDhqcTQwNGpoM21vMzhvaDNkbGMyIn0.ZpcbRL8KwXJlKlELSB1ydw';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/dark-v10',
+            center: [8, 8],
+            zoom: 2
+        });
+        function updateData() {
+
+            fetch("https://coronavirus-tracker-api.herokuapp.com/v2/locations")
+                .then(response => response.json())
+                .then(object => { getData(object) })
+                .catch((error) => { console.log(`Some Errror Occured ${error.massage}`) });
+
+            function getData(object) {
+                object.locations.forEach((element, index) => {
+                    let longitude = element.coordinates.longitude;
+                    let latitude = element.coordinates.latitude;
+                    let coord = [longitude, latitude];
+                    let cases = element.latest.confirmed;
+                    let death = element.latest.deaths;
+                    let country = element.country;
+                    let color;
+                    let stage;
+
+                    if (cases > 300) {
+                        color = "red";
+                        stage = 3;
+                    }
+                    else if (cases >= 100 && cases <= 300) {
+                        color = "black";
+                        stage = 2;
+                    }
+                    else if (cases < 100) {
+                        color = "";
+                        stage = 1;
+                    }
+
+                    // create the popup
+                    var popup = new mapboxgl.Popup({ offset: 25 }).setHTML(
+                        `<p>Confirmed Cases : ${cases}</p>
+                    <p>Deaths Cases : ${death}</p>
+                    <p>Country Name : ${country}</p>
+                    <p>Disease Stage : ${stage}</p>`
+                    );
+
+                    var marker = new mapboxgl.Marker({
+                        draggable: false,
+                        color: color
+                    })
+                        .setLngLat(coord)
+                        .setPopup(popup)
+                        .addTo(map);
+                })
+            }
+        }
+        updateData();
+        // After One minute UpdateData() function calls and data is updated from server
+        let interval = 1 * 60 * 1000;
+        setInterval(() => {
+            updateData();
+        }, interval);
+
+    </script>
+</body>
+
+</html>

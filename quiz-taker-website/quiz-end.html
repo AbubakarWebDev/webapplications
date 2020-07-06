@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Primary Meta Tags -->
+	<title>Quiz Taker Website - Web Development</title>
+	<meta content='max-snippet:-1, max-image-preview:large, max-video-preview:-1' name='robots'/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta content='Quiz Taker website - Web Development' property='og:site_name' />
+	<meta content='Quiz Taker website - Web Development' name='copyright' />
+	<meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+	<meta content='#ffffff' name='msapplication-navbutton-color'/>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible' />
+	<meta content='true' name='MSSmartTagsPreventParsing'/>
+	<meta content='en-US' property='og:locale:alternate'/>
+	<meta content='en-us' http-equiv='Content-Language' />
+	<meta content='IE=7' http-equiv='X-UA-Compatible' />
+	<meta content='follow,all' name='Googlebot-Image' />
+	<meta content='public' http-equiv='Cache-control'/>
+	<meta content='sitelinkssearchbox' name='google'/>
+	<meta content='Muhammad Abubakar' name='author' />
+	<meta content='index,follow' name='googlebot' />
+	<meta content='Pakistan' name='geo.placename'/>
+	<meta content='period' name='revisit-after' />
+	<meta content='index,follow' name='robots' />
+	<meta content='follow,all' name='Scooter' />
+	<meta content='#ffffff' name='theme-color'/>
+	<meta content='global' name='distribution'/>
+	<meta content='follow,all' name='ZyBorg' />
+	<meta content='follow,all' name='msnbot' />
+	<meta content='follow,all' name='Slurp' />
+	<meta content='pk' property='og:locale'/>
+	<meta content='English' name='language'/>
+	<meta content='all' name='WEBCRAWLERS' />
+	<meta name="language" content='English'/>
+	<meta content='PK-WB' name='geo.region'/>
+	<meta content='1 days' name='revisit' />
+	<meta content='PK' name='geo.country'/>
+	<meta name='rating' content='general'/>
+	<meta content='global' name='target'/>
+	<meta content='never' name='expires'/>
+	<meta content='all' name='spiders'/>
+	<meta charset='utf-8' />
+
+	<!-- Secondary Meta Tags -->
+	<meta name="title" content="Quiz Taker website - Web Development">
+	<meta name="description" content="useful Quiz Taker website and website development. Abubakarwebdev made best javascript Applications.">
+	<meta content='abubakarwebdev, html, css, js, javascript, cascading style sheet, hyper text markup language, jquery, fontawesome, saas, bootstrap, angular, react, Quiz Taker website, vanilla javascript' name='keywords'/>
+	<meta itemprop="name" content="Quiz Taker website - Web Development">
+	<meta itemprop="description" content="useful Quiz Taker website and website development. Abubakarwebdev made best javascript applications.">
+	<meta itemprop="image" content="https://abubakarwebdev.github.io/webapplications/main/images/abubakarwebdev.jpg">
+	<meta expr:content='https://abubakarwebdev.github.io/webapplications/main/sitemap.xml' rel='sitemap' type='application/xml'/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://abubakarwebdev.github.io/webapplications/quiz-taker-website/quiz-end.html">
+	<meta property="og:title" content="Quiz Taker website - Web Development">
+	<meta property="og:description" content="useful Quiz Taker website and website development. Abubakarwebdev made best javascript applications.">
+	<meta property="og:image" content="https://abubakarwebdev.github.io/webapplications/main/images/abubakarwebdev.jpg">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://abubakarwebdev.github.io/webapplications/quiz-taker-website/quiz-end.html">
+	<meta property="twitter:title" content="Quiz Taker website - Web Development">
+	<meta property="twitter:description" content="useful Quiz Taker website and website development. Abubakarwebdev made best javascript applications.">
+	<meta property="twitter:image" content="https://abubakarwebdev.github.io/webapplications/main/images/abubakarwebdev.jpg">
+
+    <!-- Link Tags -->
+	<link href='https://abubakarwebdev.github.io/webapplications/quiz-taker-website/quiz-end.html' rel='canonical'/>
+	<link href='https://abubakarwebdev.github.io/webapplications/quiz-taker-website/quiz-end.html' hreflang='x-default' rel='alternate'/>
+	<link href='../main/images/apple-touch-icon.png' rel='icon' type='image/png'/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
+    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" type="text/css">
+</head>
+<style>
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: "Roboto", sans-serif;
+        background-color: rgb(0, 80, 150);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p {
+        font-size: 23px;
+        letter-spacing: 1px;
+    }
+</style>
+
+<body>
+
+
+    <div class="text-white text-center">
+        <i style="font-size: 400px;" class="fas fa-award"></i>
+        <p class="mt-5 mb-1" id="name"></p>
+        <p class="my-1" id="points"></p>
+        <p class="my-1" id="time"></p>
+    </div>
+
+    <script>
+        let name = document.getElementById('name');
+        let points = document.getElementById('points');
+        let time = document.getElementById('time');
+
+        if (sessionStorage.getItem('name') != null) {
+            name.innerText = `Well Done! ${sessionStorage.getItem('name')}`;
+        }
+        else {
+            name.innerText = "Well Done! Man";
+        }
+        if (sessionStorage.getItem('points') != null) {
+            points.innerText = `Your Marks = ${sessionStorage.getItem('points')}`;
+        }
+        else {
+            points.innerText = "Your Marks = Zero";
+        }
+        if (sessionStorage.getItem('time') != null) {
+            time.innerText = `Time Taken = ${sessionStorage.getItem('time')}`;
+        }
+        else {
+            time.innerText = "Time Taken = Zero";
+        }
+    </script>
+</body>
+
+</html>

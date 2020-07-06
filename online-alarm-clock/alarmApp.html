@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Primary Meta Tags -->
+	<title>Online Alarm Clock - Javascript Web Applications</title>
+	<meta content='max-snippet:-1, max-image-preview:large, max-video-preview:-1' name='robots'/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta content='Online Alarm Clock - Javascript Web Applications' property='og:site_name' />
+	<meta content='Online Alarm Clock - Javascript Web Applications' name='copyright' />
+	<meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+	<meta content='#ffffff' name='msapplication-navbutton-color'/>
+	<meta content='IE=edge' http-equiv='X-UA-Compatible' />
+	<meta content='true' name='MSSmartTagsPreventParsing'/>
+	<meta content='en-US' property='og:locale:alternate'/>
+	<meta content='en-us' http-equiv='Content-Language' />
+	<meta content='IE=7' http-equiv='X-UA-Compatible' />
+	<meta content='follow,all' name='Googlebot-Image' />
+	<meta content='public' http-equiv='Cache-control'/>
+	<meta content='sitelinkssearchbox' name='google'/>
+	<meta content='Muhammad Abubakar' name='author' />
+	<meta content='index,follow' name='googlebot' />
+	<meta content='Pakistan' name='geo.placename'/>
+	<meta content='period' name='revisit-after' />
+	<meta content='index,follow' name='robots' />
+	<meta content='follow,all' name='Scooter' />
+	<meta content='#ffffff' name='theme-color'/>
+	<meta content='global' name='distribution'/>
+	<meta content='follow,all' name='ZyBorg' />
+	<meta content='follow,all' name='msnbot' />
+	<meta content='follow,all' name='Slurp' />
+	<meta content='pk' property='og:locale'/>
+	<meta content='English' name='language'/>
+	<meta content='all' name='WEBCRAWLERS' />
+	<meta name="language" content='English'/>
+	<meta content='PK-WB' name='geo.region'/>
+	<meta content='1 days' name='revisit' />
+	<meta content='PK' name='geo.country'/>
+	<meta name='rating' content='general'/>
+	<meta content='global' name='target'/>
+	<meta content='never' name='expires'/>
+	<meta content='all' name='spiders'/>
+	<meta charset='utf-8' />
+
+	<!-- Secondary Meta Tags -->
+	<meta name="title" content="Online Alarm Clock - Javascript Web Applications">
+    <meta name="description" content="useful Javascript Web Applications and website development. Abubakarwebdev made Online Alarm Clock.">
+    <meta content='abubakarwebdev, html, css, js, javascript, cascading style sheet, hyper text markup language, jquery, fontawesome, saas, bootstrap, angular, react, javascript web application, vanilla javascript, Online Alarm Clock' name='keywords'/>
+	<meta itemprop="name" content="Online Alarm Clock - Javascript Web Applications">
+	<meta itemprop="description" content="useful Javascript Web Applications and website development. Abubakarwebdev made Online Alarm Clock.">
+	<meta itemprop="image" content="https://abubakarwebdev.github.io/webapplications/main/images/abubakarwebdev.jpg">
+	<meta expr:content='https://abubakarwebdev.github.io/webapplications/main/sitemap.xml'rel='sitemap' type='application/xml'/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://abubakarwebdev.github.io/webapplications/online-alarm-clock">
+	<meta property="og:title" content="Online Alarm Clock - Javascript Web Applications">
+	<meta property="og:description" content="useful Javascript Web Applications and website development. Abubakarwebdev made Online Alarm Clock.">
+	<meta property="og:image" content="https://abubakarwebdev.github.io/webapplications/main/images/abubakarwebdev.jpg">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://abubakarwebdev.github.io/webapplications/online-alarm-clock">
+	<meta property="twitter:title" content="Online Alarm Clock - Javascript Web Applications">
+	<meta property="twitter:description" content="useful Javascript Web Applications and website development. Abubakarwebdev made Online Alarm Clock.">
+	<meta property="twitter:image" content="https://abubakarwebdev.github.io/webapplications/main/images/abubakarwebdev.jpg">
+
+    <!-- Link Tags -->
+	<link href='https://abubakarwebdev.github.io/webapplications/online-alarm-clock' rel='canonical'/>
+	<link href='https://abubakarwebdev.github.io/webapplications/online-alarm-clock' hreflang='x-default' rel='alternate'/>
+	<link href='../main/images/apple-touch-icon.png' rel='icon' type='image/png'/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
+    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" type="text/css">
+</head>
+<style>
+    body {
+        background-color: #212121;
+    }
+    .items-1,
+    .items-2 {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-size: 18px;
+        height: 40px;
+        background-color: #fff;
+    }
+    .items-1:hover,
+    .items-1:hover {
+        background-color: rgb(220, 220, 220);
+    }
+    .items-container {
+        max-height: 180px;
+        overflow-y: auto;
+    }
+    hr {
+        background-color: rgb(150, 150, 150);
+    }
+    button:disabled,
+    select:disabled {
+        cursor: not-allowed !important;
+        pointer-events: all !important;
+    }
+</style>
+<body>
+    <div class="container text-center text-white">
+        <hr>
+        <h1>Alarm Clock Application</h1>
+        <hr>
+        <h1 id="time" style="font-size: 50px;"></h1>
+        <h5 id="date" class="text-center my-3"></h5>
+        <p class="mb-1" style="font-size: larger;">Set Alarm For</p>
+
+        <div class="d-flex justify-content-center align-items-center">
+            <div style="width: 100px; color: #000;">
+                <button class="position-relative mt-3 mb-1 btn bg-white" type="button" id="dropdown-btn-1">
+                    <span id="btn-text-1" class="mr-3">12 AM</span><i class="fas fa-caret-down"></i>
+                </button>
+
+                <div id="dropDown-items-1" style="width:100px; z-index:100" class="position-absolute d-none">
+                    <div class="p-2 bg-white text-left">
+                        <input id="search-1" class="form-control" type="search">
+                        <div id="massage-1"></div>
+                    </div>
+                    <div class="w-100 items-container">
+                        <div class="items-1">12 AM</div>
+                        <div class="items-1">01 AM</div>
+                        <div class="items-1">02 AM</div>
+                        <div class="items-1">03 AM</div>
+                        <div class="items-1">04 AM</div>
+                        <div class="items-1">05 AM</div>
+                        <div class="items-1">06 AM</div>
+                        <div class="items-1">07 AM</div>
+                        <div class="items-1">08 AM</div>
+                        <div class="items-1">09 AM</div>
+                        <div class="items-1">10 AM</div>
+                        <div class="items-1">11 AM</div>
+                        <div class="items-1">12 PM</div>
+                        <div class="items-1">01 PM</div>
+                        <div class="items-1">02 PM</div>
+                        <div class="items-1">03 PM</div>
+                        <div class="items-1">04 PM</div>
+                        <div class="items-1">05 PM</div>
+                        <div class="items-1">06 PM</div>
+                        <div class="items-1">07 PM</div>
+                        <div class="items-1">08 PM</div>
+                        <div class="items-1">09 PM</div>
+                        <div class="items-1">10 PM</div>
+                        <div class="items-1">11 PM</div>
+                    </div>
+                </div>
+            </div>
+            <span class="mx-3" style="font-size: 30px; font-weight: bolder;">:</span>
+            <div style="width: 100px; color: #000;">
+                <button
+                    class="position-relative w-100 mt-3 mb-1 btn bg-white d-flex justify-content-end align-items-center"
+                    type="button" id="dropdown-btn-2">
+                    <span id="btn-text-2" class="mr-4">00</span><i class="fas fa-caret-down"></i>
+                </button>
+
+                <div id="dropDown-items-2" style="width:100px; z-index:100" class="position-absolute d-none">
+                    <div class="p-2 bg-white text-left">
+                        <input id="search-2" class="form-control" type="search">
+                        <div id="massage-2"></div>
+                    </div>
+                    <div class="w-100 items-container">
+                        <div class="items-2">00</div>
+                        <div class="items-2">01</div>
+                        <div class="items-2">02</div>
+                        <div class="items-2">03</div>
+                        <div class="items-2">04</div>
+                        <div class="items-2">05</div>
+                        <div class="items-2">06</div>
+                        <div class="items-2">07</div>
+                        <div class="items-2">08</div>
+                        <div class="items-2">09</div>
+                        <div class="items-2">10</div>
+                        <div class="items-2">11</div>
+                        <div class="items-2">12</div>
+                        <div class="items-2">13</div>
+                        <div class="items-2">14</div>
+                        <div class="items-2">15</div>
+                        <div class="items-2">16</div>
+                        <div class="items-2">17</div>
+                        <div class="items-2">18</div>
+                        <div class="items-2">19</div>
+                        <div class="items-2">20</div>
+                        <div class="items-2">21</div>
+                        <div class="items-2">22</div>
+                        <div class="items-2">23</div>
+                        <div class="items-2">24</div>
+                        <div class="items-2">25</div>
+                        <div class="items-2">26</div>
+                        <div class="items-2">27</div>
+                        <div class="items-2">28</div>
+                        <div class="items-2">29</div>
+                        <div class="items-2">30</div>
+                        <div class="items-2">31</div>
+                        <div class="items-2">32</div>
+                        <div class="items-2">33</div>
+                        <div class="items-2">34</div>
+                        <div class="items-2">35</div>
+                        <div class="items-2">36</div>
+                        <div class="items-2">37</div>
+                        <div class="items-2">38</div>
+                        <div class="items-2">39</div>
+                        <div class="items-2">40</div>
+                        <div class="items-2">41</div>
+                        <div class="items-2">42</div>
+                        <div class="items-2">43</div>
+                        <div class="items-2">44</div>
+                        <div class="items-2">45</div>
+                        <div class="items-2">46</div>
+                        <div class="items-2">47</div>
+                        <div class="items-2">48</div>
+                        <div class="items-2">49</div>
+                        <div class="items-2">50</div>
+                        <div class="items-2">51</div>
+                        <div class="items-2">52</div>
+                        <div class="items-2">53</div>
+                        <div class="items-2">54</div>
+                        <div class="items-2">55</div>
+                        <div class="items-2">56</div>
+                        <div class="items-2">57</div>
+                        <div class="items-2">58</div>
+                        <div class="items-2">59</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="mx-auto my-4" style="width: 250px;">
+                <p style="font-size: larger;">Alarm Sound ?</p>
+                <select id="audio" class="form-control">
+                    <option value="audio_clock">Classic Clock</option>
+                    <option value="audio_electronic">Electronic</option>
+                    <option value="audio_guitar">Heavy Metal Guitar</option>
+                    <option value="audio_military">Military Trumpet</option>
+                    <option value="audio_alien">Alien Invasion</option>
+                    <option value="audio_cock">Cockerel</option>
+                </select>
+                <button id="play" class="btn btn btn-warning mt-3"><i class="mr-2 fas fa-play"></i> Play</button>
+            </div>
+            <div id="append"></div>
+            <button id="setAlarm" class="w-25 my-4 btn btn-lg btn-primary mx-2"><i class="mr-2 fas fa-bell"></i> Set The
+                Alarm</button>
+            <button id="stopAlarm" style="display: none;" class="w-25 my-4 btn btn-lg btn-danger mx-2"><i
+                    class="mr-2 fas fa-stop"></i> Stop
+                The
+                Alarm</button>
+        </div>
+
+        <audio src="audio/cock.mp3" id="audio_cock" preload="auto" loop></audio>
+        <audio src="audio/clock.mp3" id="audio_clock" preload="auto" loop></audio>
+        <audio src="audio/electronic.mp3" id="audio_electronic" preload="auto" loop></audio>
+        <audio src="audio/guitar.mp3" id="audio_guitar" preload="auto" loop></audio>
+        <audio src="audio/military.mp3" id="audio_military" preload="auto" loop></audio>
+        <audio src="audio/alien.mp3" id="audio_alien" preload="auto" loop></audio>
+    </div>
+
+    <script src="alarmApp.js"></script>
+</body>
+
+</html>
