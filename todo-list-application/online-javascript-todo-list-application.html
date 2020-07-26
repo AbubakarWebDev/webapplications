@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Primary Meta Tags -->
+        <title>Online Javascript Todo List Application - Web Development</title>
+        <meta content='max-snippet:-1, max-image-preview:large, max-video-preview:-1' name='robots' />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta content='Online Javascript Todo List Application - Web Development' property='og:site_name' />
+        <meta content='Online Javascript Todo List Application - Web Development' name='copyright' />
+        <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+        <meta content='#ffffff' name='msapplication-navbutton-color' />
+        <meta content='IE=edge' http-equiv='X-UA-Compatible' />
+        <meta content='true' name='MSSmartTagsPreventParsing' />
+        <meta content='en-US' property='og:locale:alternate' />
+        <meta content='en-us' http-equiv='Content-Language' />
+        <meta content='IE=7' http-equiv='X-UA-Compatible' />
+        <meta content='follow,all' name='Googlebot-Image' />
+        <meta content='public' http-equiv='Cache-control' />
+        <meta content='sitelinkssearchbox' name='google' />
+        <meta content='Muhammad Abubakar' name='author' />
+        <meta content='index,follow' name='googlebot' />
+        <meta content='Pakistan' name='geo.placename' />
+        <meta content='period' name='revisit-after' />
+        <meta content='index,follow' name='robots' />
+        <meta content='follow,all' name='Scooter' />
+        <meta content='#ffffff' name='theme-color' />
+        <meta content='global' name='distribution' />
+        <meta content='follow,all' name='ZyBorg' />
+        <meta content='follow,all' name='msnbot' />
+        <meta content='follow,all' name='Slurp' />
+        <meta content='pk' property='og:locale' />
+        <meta content='English' name='language' />
+        <meta content='all' name='WEBCRAWLERS' />
+        <meta name="language" content='English' />
+        <meta content='PK-WB' name='geo.region' />
+        <meta content='1 days' name='revisit' />
+        <meta content='PK' name='geo.country' />
+        <meta name='rating' content='general' />
+        <meta content='global' name='target' />
+        <meta content='never' name='expires' />
+        <meta content='all' name='spiders' />
+        <meta charset='utf-8' />
+    
+        <!-- Secondary Meta Tags -->
+        <meta name="title" content="Online Javascript Todo List Application - Web Development">
+        <meta name="description"
+            content="useful Online Javascript Todo List Application and website development. Abubakarwebdev made best javascript Applications.">
+        <meta
+            content='abubakarwebdev, html, css, js, javascript, cascading style sheet, hyper text markup language, jquery, fontawesome, saas, bootstrap, angular, react, Online Javascript Todo List Application, vanilla javascript'
+            name='keywords' />
+        <meta itemprop="name" content="Online Javascript Todo List Application - Web Development">
+        <meta itemprop="description"
+            content="useful Online Javascript Todo List Application and website development. Abubakarwebdev made best javascript applications.">
+        <meta itemprop="image" content="https://abubakarwebdev.github.io/webapplications/main/images/abubakarwebdev.jpg">
+        <meta expr:content='https://abubakarwebdev.github.io/webapplications/main/sitemap.xml' rel='sitemap'
+            type='application/xml' />
+    
+        <!-- Meta Open Graph -->
+        <meta property="og:type" content="website">
+        <meta property="og:url"
+            content="https://abubakarwebdev.github.io/webapplications/todo-list-application/online-javascript-todo-list-application.html">
+        <meta property="og:title" content="Online Javascript Todo List Application - Web Development">
+        <meta property="og:description"
+            content="useful Online Javascript Todo List Application and website development. Abubakarwebdev made best javascript applications.">
+        <meta property="og:image" content="https://abubakarwebdev.github.io/webapplications/main/images/abubakarwebdev.jpg">
+    
+        <!-- Meta Facebook -->
+        <link href='https://www.facebook.com/abubakar.rashdi/' rel='me' />
+        <link href='https://www.facebook.com/abubakar.rashdi/' rel='author' />
+        <link href='https://www.facebook.com/techmemories' rel='publisher' />
+        <meta content='100008925421419' property='fb:admins' />
+        <meta content='105909944450594' property='fb:pages' />
+    
+        <!-- Meta Twitter -->
+        <meta name='twitter:site' content='Online Javascript Todo List Application - Web Development' />
+        <meta name='twitter:creator' content='@techmemorise' />
+        <meta name="twitter:widgets:csp" content="on" />
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url"
+            content="https://abubakarwebdev.github.io/webapplications/todo-list-application/online-javascript-todo-list-application.html">
+        <meta property="twitter:title" content="Online Javascript Todo List Application - Web Development">
+        <meta property="twitter:description"
+            content="useful Online Javascript Todo List Application and website development. Abubakarwebdev made best javascript applications.">
+        <meta property="twitter:image"
+            content="https://abubakarwebdev.github.io/webapplications/main/images/abubakarwebdev.jpg">
+    
+        <!-- Link Tags -->
+        <link
+            href='https://abubakarwebdev.github.io/webapplications/todo-list-application/online-javascript-todo-list-application.html'
+            rel='canonical' />
+        <link
+            href='https://abubakarwebdev.github.io/webapplications/todo-list-application/online-javascript-todo-list-application.html'
+            hreflang='x-default' rel='alternate' />
+        <link href='https://abubakarwebdev.github.io/webapplications/main/images/abubakarwebdev.jpg' rel='image_src' />
+        <!-- Favicon -->
+        <link href='https://abubakarwebdev.github.io/webapplications/main/images/apple-touch-icon.png' rel='icon'
+            type='image/png' />
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+            type="text/css">
+    
+    </head>
+<style>
+    @media (min-width: 768px) {
+        .w-md-75 {
+            width: 75%;
+        }
+    }
+
+    .section-heading {
+        font-family: "Anton", serif;
+        text-transform: uppercase;
+        border-bottom: 3px solid #292929;
+        color: #292929;
+        padding-bottom: 5px;
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-family: "Cabin", serif;
+        color: #fff !important;
+    }
+
+    .navbar-brand h1 {
+        font-family: "Cabin", serif;
+        font-size: xx-large;
+        font-weight: bolder;
+    }
+
+    .my-container {
+        width: 100%;
+        max-height: 300px;
+        overflow-y: auto;
+        padding-right: 10px;
+    }
+
+    .editable {
+        flex: 1 1 auto;
+        padding: .375rem .75rem;
+        border: 1px solid black;
+        color: black;
+    }
+
+    #completedContainer .editable {
+        text-decoration: line-through;
+    }
+</style>
+
+<body>
+    <!-- Application Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <h1 style="font-size: xx-large;">Online Javascript Todo List Application</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://abubakarwebdev.github.io/webapplications/#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://abubakarwebdev.github.io/webapplications/#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="https://abubakarwebdev.github.io/webapplications/#privacypolicy">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="https://abubakarwebdev.github.io/webapplications/#disclaimer">Disclaimer</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control mr-2" type="search" placeholder="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Todo List Application Body -->
+    <section class="container-lg">
+        <hr>
+        <h1 class="text-center">Online Todos List Application</h1>
+        <hr>
+        <div id="appBody" class="w-md-75 mx-auto">
+            <!-- Add Your Task Section -->
+            <div id="addSection">
+                <h3 class="section-heading mt-4">Add Your Daily Tasks</h3>
+                <div class="input-group my-3 pr-2">
+                    <input type="text" id="newTaskInp" class="form-control" placeholder="Enter Your Task">
+                    <button class="btn btn-outline-secondary" id="addBtn" type="button">
+                        Add Task
+                    </button>
+                </div>
+                <div id="newTaskInpError"></div>
+            </div>
+            <!-- Todo List Section -->
+            <div id="todoSection" style="display: none;">
+                <h3 class="section-heading mt-4">Your Todos List</h3>
+                <div id="todoContainer" class="my-container"></div>
+            </div>
+            <!-- Task Completed Section -->
+            <div id="completedSection" style="display: none;">
+                <h3 class="section-heading mt-4">Your Completed Tasks</h3>
+                <div id="completedContainer" class="my-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">s</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+
+    <script>
+        let addBtn = document.getElementById("addBtn");
+
+        showingTasks();
+
+        addBtn.addEventListener("click", function (e) {
+            let newTaskInp = document.getElementById("newTaskInp");
+            let newTaskInpError = document.getElementById("newTaskInpError");
+            let inputTodoTask = localStorage.getItem("todoTasks");
+            let todoArr;
+
+            if (newTaskInp.value == "") {
+                newTaskInpError.innerHTML = `<b class="text-red">Your Input is Not Valid. Please Enter Valid Input</b>`;
+            }
+            else {
+                if (inputTodoTask == null) {
+                    todoArr = [];
+                }
+                else {
+                    todoArr = JSON.parse(inputTodoTask);
+                }
+                todoArr.push(newTaskInp.value);
+                localStorage.setItem("todoTasks", JSON.stringify(todoArr));
+                newTaskInp.value = "";
+                newTaskInpError.innerHTML = "";
+                showingTasks();
+            }
+        });
+
+        function showingTasks() {
+            let inputTodoTask = localStorage.getItem("todoTasks");
+            let inputCompletedTask = localStorage.getItem("completedTasks");
+            let todoArr;
+            let completedArr;
+
+            if (inputTodoTask == null) {
+                todoArr = [];
+            }
+            else {
+                todoArr = JSON.parse(inputTodoTask);
+            }
+
+            if (inputCompletedTask == null) {
+                completedArr = [];
+            }
+            else {
+                completedArr = JSON.parse(inputCompletedTask);
+            }
+
+            let html1 = "";
+            todoArr.forEach((element, index) => {
+                html1 += `<div class="section-container">
+                        <div class="input-group my-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input" type="checkbox">
+                            </div>
+                            <div id="todo-${index}" class="editable form-control">${element}</div>
+                            <button class="editBtn btn btn-outline-secondary" type="button">
+                                Edit
+                            </button>
+                            <button class="delBtn btn btn-outline-secondary" type="button">
+                                Delete
+                            </button>
+                        </div>
+                    </div>`;
+            });
+            let html2 = "";
+            completedArr.forEach((element, index) => {
+                html2 += `
+                    <div class="section-container">
+                        <div class="input-group my-3">
+                            <div class="input-group-text">
+                                <input class="form-check-input" type="checkbox" checked>
+                            </div>
+                            <div id="completed-${index}" class="editable form-control">${element}</div>
+                            <button class="editBtn btn btn-outline-secondary" type="button">
+                                Edit
+                            </button>
+                            <button class="delBtn btn btn-outline-secondary" type="button">
+                                Delete
+                            </button>
+                        </div>
+                    </div>`;
+            });
+
+            document.getElementById("todoContainer").innerHTML = html1;
+            document.getElementById("completedContainer").innerHTML = html2;
+
+            if (todoArr.length > 0) {
+                document.getElementById("todoSection").style.display = "block";
+            }
+            else {
+                document.getElementById("todoSection").style.display = "none";
+            }
+            if (completedArr.length > 0) {
+                document.getElementById("completedSection").style.display = "block";
+            }
+            else {
+                document.getElementById("completedSection").style.display = "none";
+            }
+        }
+
+        document.querySelector("body").addEventListener("click", (e) => {
+            if (e.target.className.includes("editBtn")) {
+                let elm = e.target.previousElementSibling;
+                elm[elm.hasAttribute('contenteditable') ? 'removeAttribute' : 'setAttribute']('contenteditable', 'true'); // Toggle Attribute
+                elm.focus();
+                // select all the content in the element
+                document.execCommand('selectAll', false, null);
+                // collapse selection to the end
+                document.getSelection().collapseToEnd();
+                if (elm.hasAttribute('contenteditable') == false) {
+                    let inputTodoTask = localStorage.getItem("todoTasks");
+                    let inputCompletedTask = localStorage.getItem("completedTasks");
+                    let todoArr;
+                    let completedArr;
+
+                    if (inputTodoTask == null) {
+                        todoArr = [];
+                    }
+                    else {
+                        todoArr = JSON.parse(inputTodoTask);
+                    }
+
+                    if (inputCompletedTask == null) {
+                        completedArr = [];
+                    }
+                    else {
+                        completedArr = JSON.parse(inputCompletedTask);
+                    }
+
+                    if (elm.parentElement.parentElement.parentElement.id == "todoContainer") {
+                        todoArr[elm.id[5]] = elm.innerText;
+                        localStorage.setItem("todoTasks", JSON.stringify(todoArr));
+                    }
+
+                    if (elm.parentElement.parentElement.parentElement.id == "completedContainer") {
+                        completedArr[elm.id[10]] = elm.innerText;
+                        localStorage.setItem("completedTasks", JSON.stringify(completedArr));
+                    }
+
+                    showingTasks();
+                }
+            }
+        })
+
+        document.querySelector("body").addEventListener("click", (e) => {
+            if (e.target.className.includes("delBtn")) {
+                let inputTodoTask = localStorage.getItem("todoTasks");
+                let inputCompletedTask = localStorage.getItem("completedTasks");
+                let todoArr;
+                let completedArr;
+
+                if (inputTodoTask == null) {
+                    todoArr = [];
+                }
+                else {
+                    todoArr = JSON.parse(inputTodoTask);
+                }
+
+                if (inputCompletedTask == null) {
+                    completedArr = [];
+                }
+                else {
+                    completedArr = JSON.parse(inputCompletedTask);
+                }
+
+                if (e.target.parentElement.parentElement.parentElement.id == "todoContainer") {
+                    let index1 = e.target.previousElementSibling.previousElementSibling.id[5];
+                    todoArr.splice(index1, 1)
+                    localStorage.setItem("todoTasks", JSON.stringify(todoArr))
+                }
+                if (e.target.parentElement.parentElement.parentElement.id == "completedContainer") {
+                    let index2 = e.target.previousElementSibling.previousElementSibling.id[10]
+                    completedArr.splice(index2, 1);
+                    localStorage.setItem("completedTasks", JSON.stringify(completedArr))
+                }
+
+                showingTasks();
+            }
+        })
+
+        document.addEventListener("change", (e) => {
+            if (e.target.className.includes("form-check-input")) {
+                element = e.target;
+                if (element.checked == true) {
+                    let inputTodoTask = localStorage.getItem("todoTasks");
+                    let inputCompletedTask = localStorage.getItem("completedTasks");
+                    let todoArr;
+                    let completedArr;
+
+                    if (inputTodoTask == null) {
+                        todoArr = [];
+                    }
+                    else {
+                        todoArr = JSON.parse(inputTodoTask);
+                    }
+
+                    if (inputCompletedTask == null) {
+                        completedArr = [];
+                    }
+                    else {
+                        completedArr = JSON.parse(inputCompletedTask);
+                    }
+
+                    let index = element.parentElement.nextElementSibling.id[5];
+                    completedArr.push(todoArr[index]);
+                    todoArr.splice(index, 1);
+
+                    localStorage.setItem("todoTasks", JSON.stringify(todoArr))
+                    localStorage.setItem("completedTasks", JSON.stringify(completedArr))
+
+                    showingTasks();
+                }
+                else if (element.checked == false) {
+                    let inputTodoTask = localStorage.getItem("todoTasks");
+                    let inputCompletedTask = localStorage.getItem("completedTasks");
+                    let todoArr;
+                    let completedArr;
+
+                    if (inputTodoTask == null) {
+                        todoArr = [];
+                    }
+                    else {
+                        todoArr = JSON.parse(inputTodoTask);
+                    }
+
+                    if (inputCompletedTask == null) {
+                        completedArr = [];
+                    }
+                    else {
+                        completedArr = JSON.parse(inputCompletedTask);
+                    }
+
+                    let index = element.parentElement.nextElementSibling.id[10];
+                    todoArr.push(completedArr[index]);
+                    completedArr.splice(index, 1);
+
+                    localStorage.setItem("todoTasks", JSON.stringify(todoArr))
+                    localStorage.setItem("completedTasks", JSON.stringify(completedArr))
+
+                    showingTasks();
+                }
+            }
+        })
+
+        document.querySelector(`input[type="search"]`).addEventListener("input", () => {
+            let search = document.querySelector(`input[type="search"]`);
+            let searchValue = new RegExp(search.value, "i");
+            let task = document.getElementsByClassName('editable');
+
+            for (let i = 0; i < task.length; i++) {
+                if (task[i].innerText.match(searchValue)) {
+                    task[i].parentElement.parentElement.parentElement.style.display = "block";
+                }
+                else {
+                    task[i].parentElement.parentElement.parentElement.style.display = "none";
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
