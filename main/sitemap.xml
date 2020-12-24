@@ -5,84 +5,85 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+
 <url>
   <loc>https://abubakarwebdev.github.io/webapplications/</loc>
-  <lastmod>2020-07-26T20:24:26+00:00</lastmod>
+  <lastmod>2020-12-24T17:27:04+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://abubakarwebdev.github.io/webapplications/library-managment-system/library.html</loc>
-  <lastmod>2020-07-26T20:24:26+00:00</lastmod>
+  <loc>https://abubakarwebdev.github.io/webapplications/library-managment-system/</loc>
+  <lastmod>2020-12-24T17:27:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://abubakarwebdev.github.io/webapplications/corona-virus-map/covid-19-map.html</loc>
-  <lastmod>2020-07-26T20:24:26+00:00</lastmod>
+  <loc>https://abubakarwebdev.github.io/webapplications/corona-virus-map/</loc>
+  <lastmod>2020-12-24T17:27:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://abubakarwebdev.github.io/webapplications/online-alarm-clock/alarmApp.html</loc>
-  <lastmod>2020-07-26T20:24:26+00:00</lastmod>
+  <loc>https://abubakarwebdev.github.io/webapplications/online-alarm-clock/</loc>
+  <lastmod>2020-12-24T17:27:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://abubakarwebdev.github.io/webapplications/quiz-taker-website/quiz-start.html</loc>
-  <lastmod>2020-07-26T20:24:26+00:00</lastmod>
+  <loc>https://abubakarwebdev.github.io/webapplications/quiz-taker-website/</loc>
+  <lastmod>2020-12-24T17:27:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://abubakarwebdev.github.io/webapplications/api-tester-postman/api-tester-postman-application.html</loc>
-  <lastmod>2020-07-26T20:24:26+00:00</lastmod>
+  <loc>https://abubakarwebdev.github.io/webapplications/api-tester-postman-application/</loc>
+  <lastmod>2020-12-24T17:27:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://abubakarwebdev.github.io/webapplications/bricks-breaker-ball-game/bricks-breaker-ball-game.html</loc>
-  <lastmod>2020-07-26T20:24:26+00:00</lastmod>
+  <loc>https://abubakarwebdev.github.io/webapplications/bricks-breaker-ball-game/</loc>
+  <lastmod>2020-12-24T17:27:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://abubakarwebdev.github.io/webapplications/online-gpa-calculator/gpa-calculator.html</loc>
-  <lastmod>2020-07-26T20:24:26+00:00</lastmod>
+  <loc>https://abubakarwebdev.github.io/webapplications/online-gpa-calculator/</loc>
+  <lastmod>2020-12-24T17:27:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://abubakarwebdev.github.io/webapplications/online-news-website/news-api-website.html</loc>
-  <lastmod>2020-07-26T20:24:26+00:00</lastmod>
+  <loc>https://abubakarwebdev.github.io/webapplications/online-news-website/</loc>
+  <lastmod>2020-12-24T17:27:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://abubakarwebdev.github.io/webapplications/online-notes-taker/notes-taker-website.html</loc>
-  <lastmod>2020-07-26T20:24:26+00:00</lastmod>
+  <loc>https://abubakarwebdev.github.io/webapplications/online-notes-taker-website/</loc>
+  <lastmod>2020-12-24T17:27:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://abubakarwebdev.github.io/webapplications/javascript-analouge-clock/javascript-analouge-clock.html</loc>
-  <lastmod>2020-07-26T20:24:26+00:00</lastmod>
+  <loc>https://abubakarwebdev.github.io/webapplications/javascript-analouge-clock/</loc>
+  <lastmod>2020-12-24T17:27:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://abubakarwebdev.github.io/webapplications/javascript-calculator/online-javascript-calculator.html</loc>
-  <lastmod>2020-07-26T20:24:26+00:00</lastmod>
+  <loc>https://abubakarwebdev.github.io/webapplications/online-javascript-calculator/</loc>
+  <lastmod>2020-12-24T17:27:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://abubakarwebdev.github.io/webapplications/javascript-dice-game/online-javascript-dice-game.html</loc>
-  <lastmod>2020-07-26T20:24:26+00:00</lastmod>
+  <loc>https://abubakarwebdev.github.io/webapplications/online-javascript-dice-game/</loc>
+  <lastmod>2020-12-24T17:27:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://abubakarwebdev.github.io/webapplications/javascript-dictionary-application/online-javascript-dictionary-application.html</loc>
-  <lastmod>2020-07-26T20:24:26+00:00</lastmod>
+  <loc>https://abubakarwebdev.github.io/webapplications/online-javascript-dictionary-application/</loc>
+  <lastmod>2020-12-24T17:27:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://abubakarwebdev.github.io/webapplications/javascript-cv-screening/online-cv-screening-javascript-application.html</loc>
-  <lastmod>2020-07-26T20:24:26+00:00</lastmod>
+  <loc>https://abubakarwebdev.github.io/webapplications/online-cv-screening-javascript-application/</loc>
+  <lastmod>2020-12-24T17:27:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://abubakarwebdev.github.io/webapplications/todo-list-application/online-javascript-todo-list-application.html</loc>
-  <lastmod>2020-07-26T20:24:26+00:00</lastmod>
+  <loc>https://abubakarwebdev.github.io/webapplications/online-javascript-todo-list-application/</loc>
+  <lastmod>2020-12-24T17:27:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
