@@ -56,6 +56,7 @@ getRadio.addEventListener('click', () => {
         element.required = false;
     })
 })
+
 postRadio.addEventListener('click', () => {
     jsonRadio.required = true;
     parameterRadio.required = true;
@@ -128,6 +129,7 @@ form.addEventListener('submit', (e) => {
     let jsonTxtArea = document.getElementById('jsonTxtArea');
     let response = document.getElementById('responseJson');
     let copyBtn = document.getElementById('copy-btn');
+    let requestContentType = "";
     let data = {};
 
     if (requestType == "POST") {
@@ -138,9 +140,19 @@ form.addEventListener('submit', (e) => {
                 const value = parameterValue[i].value;
                 data[key] = value;
             }
-            data = JSON.stringify(data);
+
+            let formBody = [];
+            for (let key in data) {
+                let encodedKey = encodeURIComponent(key);
+                let encodedValue = encodeURIComponent(data[key]);
+                formBody.push(encodedKey + "=" + encodedValue);
+            }
+            formBody = formBody.join("&");
+            data = formBody;
+            requestContentType = "application/x-www-form-urlencoded";
         }
         else {
+            requestContentType = "application/json";
             data = jsonTxtArea.value;
         }
     }
@@ -164,23 +176,30 @@ form.addEventListener('submit', (e) => {
     else {
         let request = {
             method: "POST",
+            body: data,
             header: {
-                "Content-Type": "application/json"
-            },
-            body: data
+                "content-Type": requestContentType,
+            }
         }
 
         fetch(url, request)
-            .then(response => response.json())
+            .then(response => {
+                return (requestContentType == "application/json") ? response.json() : response.text();
+            })
             .then(responseData => {
-                response.innerText = JSON.stringify(responseData, null, 4);
+                if (requestContentType == "application/json") {
+                    response.innerText = JSON.stringify(responseData, null, 4);
+                }
+                else {
+                    response.innerText = responseData;
+                }
                 document.querySelectorAll('pre code').forEach((block) => {
                     hljs.highlightBlock(block);
                 })
-                    .catch(error => {
-                        response.innerText = ` Some Error Occured While Fetching Data From Server.\n Please Check Your Input Again that Entered Above.\n Error Name : ${error.name}\n Error Massage : ${error.massage}`
-                    });
             })
+            .catch(error => {
+                response.innerText = ` Some Error Occured While Fetching Data From Server.\n Please Check Your Input Again that Entered Above.\n Error Name : ${error.name}\n Error Massage : ${error.massage}`
+            });
         copyBtn.style.display = "block";
     }
 
