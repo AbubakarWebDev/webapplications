@@ -129,11 +129,12 @@ form.addEventListener('submit', (e) => {
     let jsonTxtArea = document.getElementById('jsonTxtArea');
     let response = document.getElementById('responseJson');
     let copyBtn = document.getElementById('copy-btn');
-    let requestContentType = "";
-    let data = {};
+    let requestContentType = "application/x-www-form-urlencoded";
+    let data;
 
     if (requestType == "POST") {
         let contentType = document.querySelector('input[name="contentRadio"]:checked').value;
+        data = {};
         if (contentType == "parameter") {
             for (let i = 0; i < parameterKey.length; i++) {
                 const key = parameterKey[i].value;
@@ -178,9 +179,11 @@ form.addEventListener('submit', (e) => {
             method: "POST",
             body: data,
             header: {
-                "content-Type": requestContentType,
+                "content-type": requestContentType,
             }
         }
+
+        console.log(request);
 
         fetch(url, request)
             .then(response => {
